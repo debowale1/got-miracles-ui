@@ -54,7 +54,7 @@ aside {
 }
 
 .disc {
-  width: 80px;
+  height: 80px;
   background-color: #ee5454;
   display: flex;
   justify-content: center;
@@ -112,4 +112,33 @@ aside nav ul .social li {
 }
 aside nav ul .social li a {
   color: #fff;
+}
+
+.top {
+  width: 100%;
+}
+
+.top header {
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.top header h1 {
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.top header nav ul li {
+  float: left;
+  margin: 0 5em;
+}
+.top header nav ul li a {
+  color: #fff;
+  font-size: 1.5em;
 }
