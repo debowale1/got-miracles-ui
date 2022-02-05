@@ -196,3 +196,85 @@ aside nav ul .social li a {
   line-height: 1.5em;
   color: #a8a8a8;
 }
+
+.theme {
+  width: 40%;
+  margin-right: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 140px;
+}
+
+.theme h2 {
+  text-transform: uppercase;
+  color: #ee5454;
+  font-size: 1.5em;
+  align-self: flex-start;
+  overflow: hidden;
+  /* position: relative;
+  right: 20px; */
+}
+
+.theme h2 .wrap {
+  position: relative;
+}
+.theme h2 .wrap span {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0 10px;
+  color: #fff;
+  position: relative;
+  top: 5px;
+}
+
+.theme h1 {
+  text-transform: capitalize;
+  font-size: 10em;
+  font-weight: 200;
+  overflow: hidden;
+}
+.theme h1 .wrap {
+  position: relative;
+}
+
+.theme p {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 2.6em;
+  font-weight: 200;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  display: flex;
+  align-self: flex-end;
+  overflow: hidden;
+  padding: 2px 20px;
+}
+
+.bar {
+  width: 500px;
+  height: 5px;
+  background-color: #505050;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  /* display: block; */
+  /* height: 5px; */
+  /* width: 250px; */
+  background: #ee5454;
+  border-radius: 5px;
+}
