@@ -136,7 +136,8 @@ aside nav ul .social li a {
 
 .top header nav ul li {
   float: left;
-  margin: 0 5em;
+  /* margin: 0 5em; */
+  margin-left: 6em;
 }
 .top header nav ul li a {
   color: #fff;
@@ -277,4 +278,160 @@ aside nav ul .social li a {
   /* width: 250px; */
   background: #ee5454;
   border-radius: 5px;
+}
+
+.extra {
+  width: 20%;
+  height: 1000px;
+  position: relative;
+}
+
+.half-num {
+  position: relative;
+  top: 100px;
+  left: 70px;
+  display: flex;
+  color: #ee5454;
+  align-items: center;
+  overflow: hidden;
+}
+
+.half-num h1 {
+  font-size: 8em;
+  position: relative;
+  right: 40px;
+  font-weight: 200;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+}
+
+.extra .new-beginning {
+  position: absolute;
+  bottom: 280px;
+  display: flex;
+}
+
+.go {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #ee5454;
+  border: 2px solid #ee3444;
+}
+
+.go span {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.new-beginning .content {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mada', sans-serif;
+}
+
+.new-beginning .content h4 {
+  font-size: 1em;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 10px;
+}
+
+.new-beginning .content h4:before {
+  display: block;
+  content: '';
+  margin-bottom: 20px;
+  width: 30px;
+  height: 4px;
+  background-color: #ee5454;
+  position: absolute;
+  bottom: 10px;
+}
+
+.new-beginning .content p {
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #a8a8a8;
+  /* width: 300px; */
+}
+
+.extra .scroll {
+  position: absolute;
+  bottom: 120px;
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.extra .scroll .scroll-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.extra .scroll .scroll-widget .circle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.extra .scroll h3 {
+  font-family: 'Mada', sans-serif;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.indicator {
+  position: absolute;
+  top: 40%;
+  right: 30px;
+}
+
+.indicator ul li {
+  list-style: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.indicator ul li span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.indicator ul li span:hover {
+  background-color: #ee5454;
+}
+
+.indicator ul li span:hover::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  right: 8px;
+  bottom: 8px;
 }
