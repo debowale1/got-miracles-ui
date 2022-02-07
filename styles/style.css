@@ -435,3 +435,7 @@ aside nav ul .social li a {
   right: 8px;
   bottom: 8px;
 }
+
+.wrap {
+  position: relative;
+}

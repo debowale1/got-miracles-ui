@@ -14,7 +14,7 @@
 <body>
   
   <section class="wrapper">
-    <img src="assets/rapper.png" alt="rapper">
+    <img class="rapper" src="assets/rapper.png" alt="rapper">
     <div class="circle-outer">
       <div class="circle-inner"></div>
     </div>
@@ -125,5 +125,38 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script>
+    const tl = new TimelineMax()
+    tl.fromTo('.circle-outer', 1, {opacity: '0'}, {opacity: '1'}, 1.5)
+    tl.fromTo('.circle-inner', 1, {opacity: '0'}, {opacity: '1'}, 2.5)
+    tl.from('.landing aside', .5, {x: -150}, .5)
+    tl.from('.landing .top header', .8, {y: -150}, 1)
+    tl.from('.features .feature h1, .features .feature p', .5, {y: 100}, 2.5)
+    tl.fromTo('.features .feature span', .5, {height: '0'}, {height: '5'}, 3)
+    tl.fromTo('.features .feature:nth-child(2) span', .5, {height: '0'}, {height: '50'}, 3)
+    // got
+    tl.fromTo('.content .theme h2 .wrap', 1, {top: '300'}, {top: '0'}, 1)
+    // miracles
+    tl.fromTo('.content .theme h1 .wrap', .5, {top: '300'}, {top: '0'}, 1)
+    // like it
+    tl.fromTo('.content .theme p', .5, {opacity: '0'}, {opacity: '1'}, 3)
+    // bar
+    tl.fromTo('.content .theme .bar', .5, {bottom: '-200'}, {bottom: '0'}, 1.5)
+    // 02
+    tl.fromTo('.content .extra .half-num h1 .wrap', .5, {right: '300'}, {right: '0'}, 2)
+    // svg arrow
+    tl.from('.content .extra .half-num svg', 1, {y: '-500'}, 1)
+    // go
+    tl.fromTo('.content .extra .new-beginning .go', 1, {opacity: '0'}, {opacity: '1'}, 2)
+    // new beginning
+    tl.fromTo('.content .extra .new-beginning .content', 1, {opacity: '0'}, {opacity: '1'}, 2.5)
+    // scroll
+    tl.fromTo('.content .extra .scroll', 1, {opacity: '0'}, {opacity: '1'}, 2)
+    // indicator
+    tl.from('.content .indicator', .4, {x: '100'}, 1.5)
+    // rapper
+    tl.fromTo('.rapper', 1, {opacity: '0'}, {opacity: '1'}, 1.5)
+  </script>
 </body>
 </html>
